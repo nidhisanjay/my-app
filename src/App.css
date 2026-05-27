@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #0f0f0f;
+  position: sticky;
+  top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+nav ul a:hover {
+  color: #6c63ff;
+}
+
+#hero {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#hero h1 {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+
+#hero p {
+  font-size: 18px;
+  color: #aaaaaa;
+  margin-bottom: 30px;
+}
+
+#hero a {
+  background-color: #6c63ff;
   color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+#hero a:hover {
+  background-color: #574fd6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  padding: 80px 60px;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #6c63ff;
+}
+
+section p {
+  font-size: 16px;
+  color: #cccccc;
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.skills-list span {
+  background-color: #1e1e1e;
+  border: 1px solid #6c63ff;
+  color: #6c63ff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
 }
